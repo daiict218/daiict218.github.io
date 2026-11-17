@@ -1,0 +1,68 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>AI Sales Line architecture | Sprinklr</title><meta name="robots" content="noindex">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing:border-box; margin:0; }
+  body { width:1920px; height:1080px; font-family:Inter,Arial,sans-serif; background:#f4f7fb; color:#0b1736; position:relative; overflow:hidden; }
+  h1 { position:absolute; left:80px; top:56px; font-size:46px; font-weight:800; letter-spacing:-1px; }
+  h1 span { background:linear-gradient(90deg,#70bf54,#00bae9,#108acc); -webkit-background-clip:text; background-clip:text; color:transparent; }
+  .sub { position:absolute; left:80px; top:124px; font-size:22px; color:#5a6680; }
+  .box { position:absolute; background:#fff; border:2px solid #e4e9f1; border-radius:20px; padding:22px 24px; box-shadow:0 10px 28px rgba(11,23,54,.08); }
+  .box b { display:block; font-size:25px; margin-bottom:8px; }
+  .box p { font-size:18px; line-height:1.4; color:#5a6680; }
+  .tag { display:inline-block; font-size:14px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:#5a6680; margin-bottom:10px; }
+  .mod { display:inline-flex; align-items:center; gap:8px; font-size:17px; font-weight:800; color:#fff; background:linear-gradient(90deg,#108acc,#00bae9); padding:7px 14px; border-radius:999px; margin-bottom:12px; }
+  .mod::before { content:'Sprinklr module'; font-size:11px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; background:rgba(255,255,255,.25); padding:3px 8px; border-radius:999px; }
+  .num { position:absolute; top:-18px; left:-18px; width:40px; height:40px; border-radius:50%; background:linear-gradient(135deg,#70bf54,#00bae9,#108acc); color:#fff; font-weight:800; font-size:20px; display:grid; place-items:center; }
+  .platform { position:absolute; left:640px; top:200px; width:1200px; height:600px; border:3px dashed #108acc; border-radius:28px; background:rgba(16,138,204,.04); }
+  .platform .lbl { position:absolute; top:-22px; left:36px; background:#108acc; color:#fff; font-weight:800; font-size:22px; padding:8px 20px; border-radius:999px; display:flex; align-items:center; gap:10px; }
+  svg.arrows { position:absolute; inset:0; }
+  html { background:#f4f7fb; overflow:hidden; }
+  body { transform-origin:0 0; }
+</style></head>
+<body>
+<h1>AI Sales Line: <span>Sprinklr selling on Sprinklr</span></h1>
+<div class="sub">A website visitor talks to an AI agent, and a seller calls back with the full story. All on one platform.</div>
+
+<div class="box" style="left:80px; top:250px; width:440px;">
+  <div class="num">1</div><span class="tag">Visitor</span>
+  <b>Website visitor</b><p>A buyer who is curious about Sprinklr.</p>
+</div>
+<div class="box" style="left:80px; top:520px; width:440px;">
+  <div class="num">2</div><span class="mod">Voice + Live Chat</span>
+  <b>Call or chat</b><p>On sprinklr.com/agents, a phone number and a chat. The AI agent answers at once, day and night.</p>
+</div>
+
+<div class="platform"><div class="lbl">Sprinklr platform</div></div>
+
+<div class="box" style="left:700px; top:260px; width:500px;">
+  <div class="num">3</div><span class="mod">AI Agents</span>
+  <b>AI agent</b><p>Answers product questions, qualifies the visitor, and captures name, phone, company, need and timeline.</p>
+</div>
+<div class="box" style="left:1290px; top:260px; width:500px;">
+  <div class="num">4</div><span class="mod">Entity Studio</span>
+  <b>Lead record</b><p>The lead is saved with every detail and a status of New. No form, no typing.</p>
+</div>
+<div class="box" style="left:1290px; top:560px; width:500px;">
+  <div class="num">5</div><span class="mod">Outbound Campaigns</span>
+  <b>Calling campaign</b><p>One campaign per product. The lead joins at once and is called right away.</p>
+</div>
+<div class="box" style="left:700px; top:560px; width:500px;">
+  <div class="num">6</div><span class="mod">Care Console + Agent Copilot</span>
+  <b>Seller (SDR) calls back</b><p>The whole AI conversation on one screen, and a Copilot brief before saying hello.</p>
+</div>
+
+<svg class="arrows" viewBox="0 0 1920 1080">
+  <defs><marker id="a" markerUnits="userSpaceOnUse" markerWidth="22" markerHeight="22" refX="20" refY="11" orient="auto"><path d="M0,0 L22,11 L0,22 z" fill="#108acc"/></marker></defs>
+  <g stroke="#108acc" stroke-width="4" fill="none" marker-end="url(#a)">
+    <path d="M300 395 L300 505"/>
+    <path d="M522 600 C600 600 600 360 690 360"/>
+    <path d="M1202 360 L1280 360"/>
+    <path d="M1540 470 L1540 550"/>
+    <path d="M1288 660 L1212 660"/>
+    <path d="M950 744 C950 900 300 900 300 712"/>
+  </g>
+  <text x="470" y="900" font-family="Inter,Arial" font-size="20" font-weight="600" fill="#108acc">7. The seller calls the visitor back, with the full story</text>
+</svg>
+<script>function fit(){var k=Math.min(innerWidth/1920,innerHeight/1080);document.body.style.transform='scale('+k+')';document.body.style.marginLeft=Math.max(0,(innerWidth-1920*k)/2)+'px';}addEventListener('resize',fit);fit();</script>
+</body></html>
